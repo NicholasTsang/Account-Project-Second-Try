@@ -6,7 +6,7 @@ import com.google.gson.GsonBuilder;
 public class Service {
 	private static int counter = 0;
 	private static HashMap<Integer, String> Hmap = new HashMap<Integer, String>();
-	public void dataBase (String firstName, String lastName, String accountNumber) {
+	public void names (String firstName, String lastName, String accountNumber) {
 		String FullDetails = firstName+" "+lastName+" "+accountNumber;
 		counter++;
 		
@@ -21,7 +21,7 @@ public class Service {
 		 String Retrieve= Hmap.get(Number);
 		 System.out.println(Retrieve);
 	}
-	
+	//it is code
 	public void jsonRetrieve () {
 		 Gson JsonMap = new GsonBuilder().create();
 		 String PrintJsonMap = JsonMap.toJson(Hmap);

@@ -8,7 +8,7 @@ public void createAccount(String firstNames, String lastNames, String accountNum
 	String accountNumber = accountNumbers;
 	Service details = new Service();
 	
-	details.dataBase(firstName,lastName,accountNumber);
+	details.names(firstName,lastName,accountNumber);
 	
 }
 
